@@ -48,6 +48,13 @@ a:hover.nav{
     justify-content: center;
 
 }
+.text{
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    
+
+}
 @media screen and (max-width 600px){
     nav {
         background-color: red;
