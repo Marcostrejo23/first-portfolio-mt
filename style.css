@@ -1,7 +1,7 @@
 :root{
-background-color:#4b4b4b;   
-padding: 0;
-margin: 0;
+    background-color:#4b4b4b;   
+    padding: 0;
+    margin: 0;
 }
 #header{
     background-color: #273c75;
@@ -14,29 +14,43 @@ margin: 0;
     padding-left: 15px;
 }
 a:hover.nav{
-display: flex;
-padding: 10px;
-justify-content: flex-end;
-/* list-style-type: none; */
-text-align: center;
-margin: 0;
-overflow: hidden;
-border-bottom: 5px solid black;
+    display: flex;
+    padding: 10px;
+    justify-content: flex-end;
+    /* list-style-type: none; */
+    text-align: center;
+    margin: 0;
+    overflow: hidden;
+    border-bottom: 5px solid black;
 
 
 }
 .li{
+    flex-grow: 3;
     padding: 5px;
     background-color: #7f8fa6;
     margin: 5px;
-
+    justify-content: space-between;
+    padding: 30px 15px white;
+    border: 30px 15px black;
 }
 #img{
-display: block;
-margin: auto;
-width: 70%;
+    display: block;
+    margin: auto;
+    width: 70%;
+    border: 1px black;
 }
 .info{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 
-
+}
+@media screen and (max-width 600px){
+    nav {
+        background-color: red;
+    }
+    
 }
