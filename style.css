@@ -25,6 +25,18 @@ a:hover.nav{
 
 
 }
+
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-basis: content;
+    overflow: hidden;
+    padding: 20px;
+    margin: 20px white;
+    border: 15px;
+}
 .li{
     flex-grow: 3;
     padding: 5px;
@@ -37,16 +49,23 @@ a:hover.nav{
 #img{
     display: block;
     margin: auto;
-    width: 70%;
+    width: 80%;
+    height: auto;
     border: 1px black;
 }
 .info{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    align-items: stretch;
+    justify-content: space-evenly;
+    border: 20px azure ;
+    padding: 50px;
+    margin: 20px;
 
+}
+#about{
+    justify-content: center;
 }
 .text{
     flex-wrap: wrap;
@@ -55,9 +74,10 @@ a:hover.nav{
     
 
 }
+
 @media screen and (max-width 600px){
     nav {
-        background-color: red;
+        background-color: rgb(106, 161, 111);
     }
     
 }
