@@ -53,20 +53,18 @@ a:hover.nav{
 }
 
 #portfolio{
-width: 200px;
-height: 200px;
+width: 250px;
+height: 250px;
 }
 
 #about{
-    width: 200px;
-    height: 200px;
-    justify-content: center;
-    align-items: center;
-    overflow: scroll;
+    width: 250px;
+    height: 250px;
+    
 }
 #contact{
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
 }
 .li{
     flex-grow: 3;
