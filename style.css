@@ -27,19 +27,21 @@ a:hover.nav{
 }
 
 .container{
+    display: flex;
     flex-wrap: wrap;
     flex-basis: content;
     overflow: hidden;
+    justify-content: space-around;
 }
 
-.li{
-    flex-grow: 3;
-    padding: 5px;
-    background-color: #7f8fa6;
-    margin: 5px;
-    justify-content: space-between;
-    padding: 30px 15px white;
-    border: 30px 15px black;
+.info{
+    display: flex;
+    flex-grow: inherit;
+    align-items: baseline;
+    justify-content: space-evenly;
+    border: 20px azure ;
+    padding: 50px;
+    margin: 20px;
 }
 
 #img{
@@ -50,24 +52,34 @@ a:hover.nav{
     border: 1px black;
 }
 
-.info{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: stretch;
-    justify-content: space-evenly;
-    border: 20px azure ;
-    padding: 50px;
-    margin: 20px;
-}
-#about{
-    justify-content: center;
+#portfolio{
+width: 200px;
+height: 200px;
 }
 
-.text{
-    flex-wrap: wrap;
+#about{
+    width: 200px;
+    height: 200px;
+    justify-content: center;
     align-items: center;
-    justify-content: space-evenly;
+    overflow: scroll;
+}
+#contact{
+    width: 200px;
+    height: 200px;
+}
+.li{
+    flex-grow: 3;
+    padding: 5px;
+    background-color: #7f8fa6;
+    margin: 5px;
+    justify-content: space-between;
+    padding: 30px 15px white;
+    border: 30px 15px black;
+}
+
+#text{
+    display: inline;
 }
 
 @media screen and (max-width 600px){
