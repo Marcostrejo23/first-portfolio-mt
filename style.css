@@ -55,12 +55,14 @@ body {
     flex-direction: row;
     justify-content: space-between;
     padding: 10px;
-    border: 30px #95afc0;
+    border: 30px solid #95afc0;
 }
 
 .content{
     padding: 10px;
-    border: 10px #95afc0;
+    border: 30px solid #95afc0;
+    margin: auto;
+    flex-grow: 4 4;
 }
 
 
