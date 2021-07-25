@@ -23,11 +23,11 @@ html{
 }
 
 a:hover.nav{
-    /* display: flex; */
+    display: flex;
     padding: 10px;
-    /* justify-content: flex-end; */
-    /* list-style-type: none; */
-    /* text-align: center; */
+    justify-content: flex-end;
+    list-style-type: none;
+    text-align: center;
     margin: 0;
     overflow: hidden;
     border-bottom: 5px solid black;
@@ -37,13 +37,33 @@ body {
     font-size: 1.0rem;
     line-height: 1.5;
 }
-
-#img{
+.images{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    border-radius: 25px;
+}
+.img{
     display: block;
+    grid-template-columns: auto auto auto;
     margin: auto;
-    width: 80%;
+    width: 50%;
     height: auto;
-    border: 1px black;
+    padding: 10px;
+    margin: 20px;
+    border: 20px solid #95afc0;
+    overflow: hidden;
+    border-radius: 25px;
+    box-shadow: 10px 10px 10px 10px;
+    
+}:hover{
+    flex-grow: 2.3;
+    background-color: lighten(darkred, 20);
+}
+
+#pic{
+    width: 20%;
+    margin: auto;
 }
 .container{
     justify-content: center;
@@ -69,11 +89,11 @@ body {
     overflow: hidden;
     flex-grow: 4;
     box-shadow: 15px 15px 15px 15px;
-   
+}:hover{
+    flex-grow: 2.3;
+    background-color: lighten(darkred, 20);
 }
-.content:hover{
 
-}
 @media only screen and (max-width 600px){
         nav {
             background-color: rgb(106, 161, 111);
