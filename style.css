@@ -50,24 +50,30 @@ body {
     align-items: center;
 }
 .info{
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
     padding: 10px;
-    border: 30px solid #95afc0;
+    border: 10px;
 }
 
 .content{
-    padding: 10px;
-    border: 30px solid #95afc0;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-basis: auto;
+    padding: 20px;
+    border: 10px solid #95afc0;
+    border-radius: 25px;
     margin: auto;
-    flex-grow: 4 4;
+    overflow: hidden;
+    flex-grow: 4;
+    box-shadow: 15px 15px 15px 15px;
+   
 }
+.content:hover{
 
-
-
-
+}
 @media only screen and (max-width 600px){
         nav {
             background-color: rgb(106, 161, 111);
