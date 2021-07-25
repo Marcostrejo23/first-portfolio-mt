@@ -1,7 +1,7 @@
 :root{
     background-color:#4b4b4b;   
     padding: 0;
-
+    scroll-behavior: smooth;
 }
 ::selection{
     color: #4834d4;
@@ -9,6 +9,7 @@
 }
 html{
     font-size: 100%;
+    
 }
 #header{
     background-color: #273c75;
@@ -76,11 +77,14 @@ body {
     flex-direction: row;
     padding: 10px;
     border: 10px;
+}:hover{
+    flex-grow: 2.3;
+    background-color: lighten(darkred, 20);
 }
 
 .content{
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-basis: auto;
     padding: 20px;
     border: 10px solid #95afc0;
@@ -89,9 +93,6 @@ body {
     overflow: hidden;
     flex-grow: 4;
     box-shadow: 15px 15px 15px 15px;
-}:hover{
-    flex-grow: 2.3;
-    background-color: lighten(darkred, 20);
 }
 
 @media only screen and (max-width 600px){
