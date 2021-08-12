@@ -1,15 +1,15 @@
 :root{
     background-color:#4b4b4b;   
     padding: 0;
-    scroll-behavior: smooth;
+    
 }
 ::selection{
-    color: #4834d4;
-    background-color: #e056fd;
+    color: #81ecec;
+    background-color: #55efc4;
 }
 html{
     font-size: 100%;
-    
+    scroll-behavior: smooth;
 }
 #header{
     background-color: #273c75;
@@ -23,15 +23,16 @@ html{
     text-shadow: 3px 3px #686de0;
 }
 
-a:hover.nav{
+.nav{
     display: flex;
-    padding: 10px;
+    padding: 20px;
     justify-content: flex-end;
     list-style-type: none;
     text-align: center;
     margin: 0;
     overflow: hidden;
     border-bottom: 5px solid black;
+    scroll-behavior: smooth;
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -95,8 +96,21 @@ body {
     box-shadow: 15px 15px 15px 15px;
 }
 
-@media only screen and (max-width 600px){
-        nav {
-            background-color: rgb(106, 161, 111);
-        }
+@media screen and (max-width: 992px) {
+    #header {
+      background: #ff7675;
     }
+  }
+  
+
+  @media screen and (max-width: 768px) {
+    .nav {
+      background-color: #00b894;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .content {
+      background-color: #ffeaa7;
+    }
+  }
